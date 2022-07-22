@@ -9,9 +9,11 @@ git() {
 			echo "2. converting == to === ";
 			echo "3. Added space before and after if (e.g if () {...})"; 
 			echo "4. When all is done, don't forget to create an MR if it does not exist"; 
+			echo "Input \"y\" to continue or any other key to cancel";
 			read  -n 1 -p "Have you confirmed these have been done:" choiceinput;
-			if [[ "choiceinput" = "Y" || "choiceinput" = "y" || "choiceinput" = "Yes" || "choiceinput" = "yes" ]]; 
-				then command git "${@}";
+			if [[ "$choiceinput" = "y" ]]; then 
+				echo -n "";
+				command git "${@}";
 			fi;
 		;;
 
