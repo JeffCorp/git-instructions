@@ -7,7 +7,7 @@ git() {
 	
 		"commit")
 			echo "Kindly follow these hints";
-			echo "1. Try edit deleting console.logs";
+			echo "1. Try deleting console.logs";
 			echo "2. converting == to === (except for particular intention)";
 			echo "3. Added space before and after if (e.g if () {...})"; 
 			echo "4. When all is done, don't forget to create an MR if it does not exist"; 
