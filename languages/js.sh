@@ -14,7 +14,7 @@ git() {
 			echo "Input \"y\" to continue or any other key to cancel";
 			read  -n 1 -p "Have you confirmed these have been done:" choiceinput;
 			if [[ "$choiceinput" = "y" ]]; then 
-				echo -n "";
+				printf "\n";
 				command git "${@}";
 			fi;
 		;;
@@ -22,7 +22,7 @@ git() {
 		"push")
 			echo "When push is completed, don't forget to create an MR for $3 if it does not exist";
 
-			[[ $OSTYPE == 'darwin'* ]] && osascript -e 'display notification "Have you created an MR for '$last'" with title "MR notification" sound name "Glass"';
+			[[ $OSTYPE == 'darwin'* ]] && osascript -e 'display notification "When push is completed, do not forget to create an MR for '$3' if it does not exist" with title "MR notification" sound name "Glass"';
 			command git "${@}";
 		;;
 		*)
