@@ -1,7 +1,7 @@
 # git-instructions
 Helps with best practices for coding while using git
 
-## installation guide
+## Installation guide
 - clone project to a safe directory
 - get path to the directory
 - In terminal input: 
