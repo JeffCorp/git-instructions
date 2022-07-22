@@ -22,8 +22,8 @@ git() {
 		"push")
 			echo "When push is completed, don't forget to create an MR for $3 if it does not exist";
 
-			osascript -e 'display notification "Have you created an MR for '$last'" with title "MR notification" sound name "Glass"';
-			# command git "${@}";
+			[[ $OSTYPE == 'darwin'* ]] && osascript -e 'display notification "Have you created an MR for '$last'" with title "MR notification" sound name "Glass"';
+			command git "${@}";
 		;;
 		*)
 			command git "${@}";
