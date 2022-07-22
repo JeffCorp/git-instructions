@@ -12,9 +12,9 @@ Now we have:
 expecting more...
 
 ### Contributors
-Kindly add names and/or emails
-- 
+  Kindly add names and/or emails
+   - Jeffrey Ukutegbe jeffukus@gmail.com
 
 Welcome once again.
 
-### Hope to see your contribution soon
+### Hope to see your contributions soon
