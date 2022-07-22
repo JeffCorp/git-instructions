@@ -14,7 +14,7 @@ git() {
 			echo "Input \"y\" to continue or any other key to cancel";
 			read  -n 1 -p "Have you confirmed these have been done:" choiceinput;
 			if [[ "$choiceinput" = "y" ]]; then 
-				echo -n "";
+				printf "\n";
 				command git "${@}";
 			fi;
 		;;
